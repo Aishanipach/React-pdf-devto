@@ -12,12 +12,7 @@ function Resumepdf() {
     setNumPages(numPages);
   }
   return (
-    <div className="wrap">
-      <div className="header">
-        Resume.
-        <p>My creds. Because it's expected.<br></br>But, I'm not.</p>
-      </div>
-      
+    
       <div className="pdf-container">
         <Document file={samplePDF} onLoadSuccess={onDocumentLoadSuccess}>
           <Page pageNumber={pageNumber} />
@@ -26,7 +21,7 @@ function Resumepdf() {
           Page {pageNumber} of {numPages}
         </p>
       </div>
-    </div>
+   
   );
 }
 export default Resumepdf;
